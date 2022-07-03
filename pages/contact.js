@@ -8,9 +8,9 @@ export default function Contact() {
         title="Dorian Tran - Contact"
         description="Contact me at doriantran1@gmail.com"
       />
-      <main className="page-container contact">
+      <div className="page-container contact">
         <a href="mailto:doriantran1@gmail.com">doriantran1@gmail.com</a>
-      </main>
+      </div>
     </div>
   );
 }

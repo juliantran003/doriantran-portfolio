@@ -8,7 +8,7 @@ export default function Services() {
         title="Dorian Tran - Services"
         description="A list of all the services I offer as a Sound Recordist."
       />
-      <main className="page-container services"></main>
+      <div className="page-container services"></div>
     </div>
   );
 }

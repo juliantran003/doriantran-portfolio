@@ -11,7 +11,7 @@ export default function Home() {
         title="Dorian Tran - Sound Recordist"
         description="Sound Recordist based in London with full kit."
       />
-      <main className="home">
+      <div className="home">
         <h1 className="home-title">
           Dorian Tran <span>London-based Sound Recordist</span>
         </h1>
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <LinkButton to="/work" title="Discover my work" />
-      </main>
+      </div>
     </div>
   );
 }

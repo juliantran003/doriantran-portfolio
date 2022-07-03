@@ -11,7 +11,7 @@ export default function Work() {
         title="Dorian Tran - Work"
         description="A presentation of my portfolio as a sound rcordist & sound mixer/engineer"
       />
-      <main className="page-container work">
+      <div className="page-container work">
         {work.map((work) => {
           return (
             <div className="work-list-container" key={work.title}>
@@ -34,7 +34,7 @@ export default function Work() {
             </div>
           );
         })}
-      </main>
+      </div>
     </div>
   );
 }

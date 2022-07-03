@@ -24,7 +24,7 @@ As of late, I have started collaborating with visual artists to write sound piec
 
 I seek to explore collaboration in any form and to pursue working with sound in any capacity."
       />
-      <main className="page-container about">
+      <div className="page-container about">
         {/* <p>
           I’m a freelance location sound recordist specialising in artistic,
           corporate, commercial and documentary film production based in London.
@@ -56,7 +56,7 @@ I seek to explore collaboration in any form and to pursue working with sound in 
           explore collaboration in any form and to pursue working with sound in
           any capacity.
         </p>
-      </main>
+      </div>
     </div>
   );
 }

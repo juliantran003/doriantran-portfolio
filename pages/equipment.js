@@ -8,7 +8,7 @@ export default function Equipment() {
         title="Dorian Tran - Equipment"
         description="A list of all the redoring equipment at my disposal."
       />
-      <main className="page-container equipment"></main>
+      <div className="page-container equipment"></div>
     </div>
   );
 }
