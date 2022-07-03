@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Home",
+    "to": "/"
+  },
+  {
+    "title": "Services",
+    "to": "/services"
+  },
+  {
+    "title": "Equipment",
+    "to": "/equipment"
+  },
+  {
+    "title": "Work",
+    "to": "/work"
+  },
+  {
+    "title": "About",
+    "to": "/about"
+  },
+  {
+    "title": "Contact",
+    "to": "/contact"
+  }
+]
