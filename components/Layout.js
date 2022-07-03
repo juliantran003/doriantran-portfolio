@@ -1,6 +1,5 @@
 // Imports
 import Header from "./Header.js";
-import Footer from "./Footer.js";
 import Head from "next/head";
 
 export default function Layout({ children }) {
@@ -19,7 +18,6 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main>{children}</main>
-      {/* <Footer /> */}
     </>
   );
 }
