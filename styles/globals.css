@@ -122,6 +122,7 @@ body {
   padding: 0 10px;
   cursor: pointer;
   text-align: center;
+  color: black;
 }
 
 .nav-button::before {
@@ -131,14 +132,17 @@ body {
   height: 0;
   overflow: hidden;
   visibility: hidden;
+  color: black;
 }
 
 .nav-button:hover {
   font-weight: var(--bold);
+  color: black;
 }
 
 .nav-selected {
   font-weight: var(--bold);
+  color: black;
 }
 
 /* Home */
@@ -350,14 +354,15 @@ body {
 
   /* About */
 
+  /* .about {
+    padding-top: 10vh;
+  } */
+
   .about p {
-    width: 80vw;
-    font-size: 12px;
+    width: 90vw;
+    font-size: 14px;
   }
   /* Equipment */
-  .equipment {
-    padding-top: 5vh;
-  }
 
   /* Home */
   .home-image {
@@ -372,5 +377,8 @@ body {
   /* Header */
   .nav-button {
     font-size: 14px;
+  }
+  .header {
+    padding: 3vh 0 2vh 0;
   }
 }
