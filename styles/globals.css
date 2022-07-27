@@ -26,7 +26,7 @@ body {
 
   padding: 2px 9px;
   font-family: var(--main-ff);
-  z-index: 1;
+  z-index: 2;
   font-style: italic;
   font-size: 18px;
   cursor: pointer;
@@ -279,6 +279,8 @@ body {
   color: black;
   text-align: center;
   font-style: italic;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .contact a:hover {
