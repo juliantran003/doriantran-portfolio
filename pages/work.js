@@ -22,14 +22,16 @@ export default function Work() {
               </div>
               <div className="right">
                 <h3>{work.date}</h3>
-                <a
-                  href={work.url}
-                  target="_blank"
-                  className="link-button"
-                  rel="noreferrer"
-                >
-                  View
-                </a>
+                {work.url != "/" && (
+                  <a
+                    href={work.url}
+                    target="_blank"
+                    className="link-button"
+                    rel="noreferrer"
+                  >
+                    View
+                  </a>
+                )}
               </div>
             </div>
           );

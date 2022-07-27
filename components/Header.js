@@ -5,6 +5,7 @@ import nav from "../public/json/nav.json";
 export default function Header() {
   return (
     <div className="header">
+      <div className="noise-bg"></div>
       <nav className="header-nav">
         {nav.map((button) => {
           return (

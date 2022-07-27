@@ -3,10 +3,7 @@
     "title": "Home",
     "to": "/"
   },
-  {
-    "title": "Services",
-    "to": "/services"
-  },
+
   {
     "title": "Equipment",
     "to": "/equipment"

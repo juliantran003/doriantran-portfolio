@@ -15,6 +15,11 @@ export default function Layout({ children }) {
         <meta name="theme-color" content="#000000" />
 
         <meta name="author" content="Dorian Tran" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
       </Head>
       <Header />
       <main>{children}</main>

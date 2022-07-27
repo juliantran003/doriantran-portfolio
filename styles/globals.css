@@ -2,6 +2,7 @@
 
 :root {
   --main-bg-color: #fff8dc;
+  --hover-bg-color: #d8d2bb;
   --main-ff: "Times New Roman", Times, serif;
   --secondary-ff: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -16,17 +17,16 @@ body {
 
 .page-container {
   background-color: var(--main-bg-color);
-
   min-height: 100vh;
 }
 
 .link-button {
   background: none;
-  border: solid black 2px;
+  border: solid black 1.5px;
 
   padding: 2px 9px;
   font-family: var(--main-ff);
-
+  z-index: 1;
   font-style: italic;
   font-size: 18px;
   cursor: pointer;
@@ -35,11 +35,65 @@ body {
   text-decoration: none;
 }
 
-/* .link-button:hover {
-  background: black;
+.link-button:hover {
+  /* background: black;
   border: solid var(--main-bg-color) 2px;
-  color: var(--main-bg-color);
-} */
+  color: var(--main-bg-color); */
+  background-color: var(--hover-bg-color);
+}
+
+.noise-bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: -1;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
 
 /* Header */
 
@@ -51,7 +105,7 @@ body {
   width: 100vw;
   padding: 2vh 0;
   background-color: var(--main-bg-color);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-nav {
@@ -234,4 +288,89 @@ body {
   height: 0;
   overflow: hidden;
   visibility: hidden;
+}
+
+/* Equipment */
+
+.equipment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid black 1px;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+  padding: 0px;
+}
+
+.equipment-container li {
+  list-style: none;
+  padding: 10px 20px;
+  border-top: solid black 1px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* Work */
+  .work {
+    padding-top: 13vh;
+  }
+  .work-list-container .left {
+    width: 50vw;
+    margin-right: 20px;
+  }
+
+  .work-list-container .right {
+    width: 20vw;
+  }
+  .work-list-container h1 {
+    font-size: 16px;
+  }
+
+  .work-list-container h2 {
+    font-size: 12px;
+  }
+
+  .work-list-container h3 {
+    font-size: 16px;
+  }
+
+  .work-list-container p {
+    font-size: 12px;
+  }
+
+  /* About */
+
+  .about p {
+    width: 80vw;
+    font-size: 12px;
+  }
+  /* Equipment */
+  .equipment {
+    padding-top: 5vh;
+  }
+
+  /* Home */
+  .home-image {
+    width: 60vw;
+  }
+  .home-title {
+    font-size: 24px;
+  }
+  .home-title span {
+    font-size: 16px;
+  }
+  /* Header */
+  .nav-button {
+    font-size: 14px;
+  }
 }
