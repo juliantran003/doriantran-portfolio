@@ -356,12 +356,12 @@ body {
 
   /* About */
 
-  /* .about {
+  .about {
     padding-top: 10vh;
-  } */
+  }
 
   .about p {
-    width: 90vw;
+    width: 80vw;
     font-size: 14px;
   }
   /* Equipment */
